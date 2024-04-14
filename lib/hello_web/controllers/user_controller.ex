@@ -4,7 +4,7 @@ defmodule HelloWeb.UserController do
   def index(conn, _params) do
     # The home page is often custom made,
     # so skip the default app layout.
-    text(conn, "piyopiyoex#29")
+    text(conn, "Hello! This is the result of piyopiyoex #29")
     # render(conn, :home, layout: false)
   end
 end
