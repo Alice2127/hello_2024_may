@@ -20,7 +20,8 @@ defmodule HelloWeb.Router do
     get "/", PageController, :home
     resources "/users", UserController
     get "/classes", ClassController, :index
-    
+    get "/sample", SampleController, :index
+
     live "/items", ItemLive.Index, :index
     live "/items/new", ItemLive.Index, :new
     live "/items/:id/edit", ItemLive.Index, :edit
