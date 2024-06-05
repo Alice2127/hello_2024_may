@@ -22,6 +22,8 @@ defmodule HelloWeb.Router do
     get "/classes", ClassController, :index
     get "/sample", SampleController, :index
 
+    resources "/fruits", FruitController
+
     live "/items", ItemLive.Index, :index
     live "/items/new", ItemLive.Index, :new
     live "/items/:id/edit", ItemLive.Index, :edit
